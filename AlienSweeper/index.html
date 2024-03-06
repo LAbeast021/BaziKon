@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>👽Sweeper</title>
+</head>
+<body>
+    <nav style="background-color: black;">
+        <div id="flagnumber">
+            <img style="max-width: 65px; max-height: 65px;" src="images/flag.png" alt="Flags">
+            <h1>X</h1>
+            <h1 id="numberofflags"></h1>
+        </div>
+        <div id="timer">
+            <div style="width: 70%; display: flex;align-items: center;justify-content: space-between;">
+                <h1>your Time -></h1>
+                <h1 id="timertext"></h1>
+            </div>
+        </div>
+       
+    </nav>
+
+
+    <h2> Please Choose the grid size ↝</h2>
+    <h3>  ↰ Please Select the Difficulty </h3>
+
+
+    <div class="lose"> 
+        <h1> OOPS !, YOU LOST</h1> <br>
+        <button class="restart">TRY AGAIN ? </button>
+    </div>
+    <div class="win"> <h1>CONGRATS !!! YOU WON</h1> <br>
+        <button class="restart"> PLAY AGAIN !</button>
+    </div>
+
+
+
+    <div class="background"><img src="images/logo.jpeg" alt=""></div>
+    <div class="menu">
+    <div class="size">
+        
+        <button value="10"> 10 X 10</button>
+
+        <button value="20">20 X 20</button>
+
+        <button value="40">25 X 40</button>
+
+    </div>
+    <div class="difficulty">
+
+        <button  value="0.1"> EASY</button>
+
+        <button value="0.2">MEDIUM</button>
+
+        <button value="0.3">HARD</button>
+
+    </div>
+    <button class="start">  👽START </button>
+    </div>
+    <div class="rightColumn">
+
+        <div class="container">
+
+        </div>
+    </div>
+    
+</body>
+</html>

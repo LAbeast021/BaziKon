@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: start;
+    margin-top: 0;
+    margin-top:2% ;
+    background-color: rgb(26, 25, 25);
+    height: 200px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    border: 3px dotted rgb(47, 255, 227);
+    visibility: hidden;
+    font-family: 'Yeon Sung', cursive;
+    color: white;
+    letter-spacing: 3px;
+}
+#flagnumber{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+    border: 3px dotted rgb(0, 153, 255);
+}
+#timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 90%;
+    border: 3px dotted red;
+}
+.background{
+    margin-left: 3.1%;
+    margin-bottom: -2%;
+}
+h2{
+    position: absolute;
+    margin-left: -45%;
+    margin-top: 28% ;
+    color: white;
+    font-family: 'Yeon Sung', cursive;
+    font-weight: 700;
+}
+h3{
+    display: none;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 34%;
+    color: white;
+    font-family: 'Yeon Sung', cursive;
+    font-weight: 900;
+};
+p .arrow{
+    position: absolute;
+    font-weight: 1000;
+    font-size: 35px;
+}
+/* ///////////////////// Menu ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.size{
+    display: flex;
+    border: 4px solid black ;
+    border-radius: 20px;
+    width: 500px;
+    background: #C1CAD6;
+    
+}
+.size button{
+    border: 2px solid rgb(54, 60, 85);
+    color: black;
+    height: 40px;
+    border-radius: 120px;
+    width: 30%;
+    margin: 5%;
+    background-color: initial;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Yeon Sung', cursive;
+}
+.difficulty{
+    visibility: hidden;
+    display: flex;
+    border: 4px solid black ;
+    border-radius: 20px;
+    width: 100%;
+    background: #C1CAD6;
+}
+.difficulty button{
+    color: black;
+    height: 35px;
+    border: 2px solid rgb(54, 60, 85);
+    border-radius: 120px;
+    margin: 5%;
+    width: 15%;
+    background-color: initial;
+    outline: none;
+    cursor: pointer;
+    width: 30%;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Yeon Sung', cursive;
+}
+.start{
+    margin-top: 4%;
+    font-size: 30px;
+    text-align: center;
+    width: 40%;
+    height: 45px;
+    color: white;
+    border: 3px solid white;
+    background: rgb(50, 67, 71);
+    border-radius: 120px;
+    margin-left: 30%;
+    visibility: hidden;
+    font-family: 'Yeon Sung', cursive;
+    cursor: pointer;
+}
+
+.difficulty button:hover{
+    box-shadow: 3px 3px 3px rgb(105, 100, 100);
+    font-size: 21px;
+    color: rgb(95, 10, 10);
+    border: 4px solid rgb(108, 165, 153);
+    font-weight: 900;
+    text-shadow: 3px 3px 4px gray;
+}
+.size button:hover{
+    box-shadow: 3px 3px 3px rgb(105, 100, 100);
+    font-size: 21px;
+    color: rgb(95, 10, 10);
+    border: 4px solid rgb(108, 165, 153);
+    font-weight: 900;
+    text-shadow: 3px 3px 4px gray;
+    
+}
+.start:hover{
+    transition: .5s;
+    font-size: 32px;
+    border: 3px solid black;
+    color: red;
+    text-shadow: 3px 3px 3px black;
+}
+.size .clicked{
+    border: 4px solid rgb(184, 20, 20);
+    color: rgb(3, 3, 3);
+    box-shadow: 3px 3px 3px rgb(105, 100, 100);
+    font-size: 21px;
+    font-weight: 900;
+    text-shadow: 3px 3px 4px gray;
+}
+.difficulty .clicked{
+    border: 4px solid rgb(184, 20, 20);
+    color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px rgb(105, 100, 100);
+    font-size: 21px;
+    font-weight: 900;
+    text-shadow: 3px 3px 4px gray;
+}
+
+/* ///////////////////////////////////////// Numbers ///////////////////////////////////// */
+.green{
+    color: rgb(21, 190, 21);
+    font-size: 20px;
+    font-family: 'Yeon Sung', cursive;
+}
+.yellowgreen{
+    color: yellowgreen;
+    font-size: 20px;
+    font-family: 'Yeon Sung', cursive;
+}
+.yellow{
+    color: yellow;
+    font-size: 20px;
+    font-family: 'Yeon Sung', cursive;
+}
+.orange{
+    color: rgb(206, 144, 28);
+    font-size: 20px;
+    font-family: 'Yeon Sung', cursive;
+}
+.red{
+    color: rgb(192, 33, 33);
+    font-size: 20px;
+    font-family: 'Yeon Sung', cursive;
+}
+.purple{
+    color: rgb(122, 21, 190);
+    font-size: 20px;
+    font-family: 'Yeon Sung', cursive;
+}
+.pink{
+    color: rgb(211, 81, 178);
+    font-size: 20px;
+    font-family: 'Yeon Sung', cursive;
+}
+.greenolive{
+    color: rgb(72, 107, 72);
+    font-size: 20px;
+    font-family: 'Yeon Sung', cursive;
+};
+/* //////////////////////////////////////////////////////BOARD///////////////////////////////////////////////////////////////////// */
+.rightColumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    transform: rotate3d(1,1,1 , 360deg);
+    transition: 6s;
+}
+/* .container{
+    display: grid;
+    grid-template-rows: repeat(25, 34px);
+    grid-template-columns: repeat(40, 34px);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    margin-bottom: 1%;
+    margin-top:5% ;
+} */
+.playground{
+    background-image: url(../images/astronaut-icon-vector.png);
+    background-repeat: no-repeat;
+    background-size: 33px;
+    border: 1.5px solid rgb(179, 172, 172);
+    border-radius: 12px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+.bomb{
+    background-image: url(../images/al.png);
+    background-repeat: no-repeat;
+    background-size: 31px;
+}
+.playground.rightclick{
+    background-image: url(../images/flag.png);
+}
+/* ///////////////////////////////  RESTART PAGE //////////////////////////////////////////// */
+.lose{
+    display: none;
+    text-align: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    margin: -2%;
+    background: rgba(255, 0, 0, 0.288);
+    z-index: 10;
+    justify-content: center;
+}
+.lose h1{
+    background: black;
+    border: 3PX solid rgb(173, 9, 9);
+    border-radius: 130px;
+    width: 400px;
+    font-family: 'Yeon Sung', cursive;
+}
+.win h1{
+    background: rgb(25, 146, 202);
+    border: 3PX solid rgb(88, 230, 22);
+    border-radius: 130px;
+    width: 500px;
+    font-family: 'Yeon Sung', cursive;
+}
+.restart{
+    font-size: 30px;
+    text-align: center;
+    width: 20%;
+    height: 60px;
+    color: white;
+    border: 3px solid white;
+    background: rgb(50, 67, 71);
+    border-radius: 120px;
+    font-family: 'Yeon Sung', cursive;
+    cursor: pointer;
+}
+.win{
+    display: none;
+    text-align: center;
+    border: 3PX solid yellowgreen;
+    background: black;
+    border-radius: 130px;
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    margin: -2%;
+    background: rgba(0, 255, 42, 0.13);
+    z-index: 10;
+    justify-content: center;
+}
+.win .restart:hover{
+    transition: .5s;
+    font-size: 32px;
+    border: 3px solid rgb(25, 146, 202);
+    color: rgb(81, 255, 0);
+    text-shadow: 3px 3px 3px black;
+}
+.lose .restart:hover{
+    transition: .5s;
+    font-size: 32px;
+    border: 3px solid black;
+    color: red;
+    text-shadow: 3px 3px 3px black;
+}
+button{
+    outline: none;
+}
+
+
+/* ///////////////////////////////// ANIMATION KEYFRAMES ///////////////////////// */
+/* @keyframes light{
+    0%{
+        display: none;
+    }
+    30%{
+        display: none;
+    }
+    45%{
+     display: none;
+    }
+    60%{
+        display: none;  
+    }
+    80%{
+        display: flex;   
+    }
+    
+
+} */
