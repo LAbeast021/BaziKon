@@ -19,7 +19,7 @@ playingComputer = false;
 /*----- cached element references -----*///////////////////////////////////////////////////////////////////////////////////
 let btn = document.querySelector("section");
 let square = document.querySelectorAll("section div");
-let reset = document.querySelector("button");
+let reset = document.getElementById("reset");
 let message = document.getElementById("text");
 let opponent = document.getElementById("opponentSelector");
 
